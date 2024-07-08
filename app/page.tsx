@@ -4,10 +4,11 @@ import {useEffect, useRef} from "react";
 
 export default function Home() {
 
-    const menuRef = useRef<HTMLElement>()
+    const menuRef = useRef<HTMLDivElement>()
     const titles = useRef<string[]>([])
 
     useEffect(() => {
+        // @ts-ignore
         titles.current = Array.from(menuRef.current.children)
             .map(titleElement => titleElement.innerHTML);
 
@@ -17,19 +18,23 @@ export default function Home() {
             const scrollThreshold = limit + 100 /* menu.bottom */ + 79 /* title element height */;
 
             const menu = menuRef.current;
-            const menuPosition = menu.getBoundingClientRect().top;
+            const menuPosition = menu?.getBoundingClientRect().top;
 
-            if (menuPosition < limit && !menu.classList.contains("fixed")) {
-                menu.classList.add('fixed');
-            } else if (menu.classList.contains("fixed") && this.scrollY < screenHeight - scrollThreshold) {
-                menu.classList.remove('fixed');
+            // @ts-ignore
+            if (menuPosition < limit && !menu?.classList.contains("fixed")) {
+                menu?.classList.add('fixed');
+            } else if (menu?.classList.contains("fixed") && this.scrollY < screenHeight - scrollThreshold) {
+                menu?.classList.remove('fixed');
             }
 
+            // @ts-ignore
             const activeSectionElement = document.elementFromPoint(10, menuPosition + 79);
+            // @ts-ignore
             const activeSection = activeSectionElement.classList[1] || activeSectionElement.parentElement.classList[1] || activeSectionElement.parentElement.parentElement.classList[1]
             const activeSectionIndex = titles.current.findIndex((e) => e === activeSection);
             const activeSectionTitle = titles.current[activeSectionIndex];
 
+            // @ts-ignore
             Array.from(menuRef.current.children)
                 .forEach((titleElement) => {
                     if (titleElement.innerHTML === activeSectionTitle) {
@@ -46,8 +51,8 @@ export default function Home() {
     return (
         <div>
             <div className="background"></div>
-
             <div className="main-title">CHARLOTTE DAUPHIN</div>
+            {/* @ts-ignore */}
             <div id="menu" ref={menuRef} className="menu">
                 <div className="menu-title"
                      onClick={() => window.location.href = 'https://charlottedauphin.world/pages/humann-prize'}>STUDIO
