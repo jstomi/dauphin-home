@@ -1,33 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Dauphin";
+  src: url("/fonts/Dauphin-Regular.woff");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Impact";
+  src: url("/fonts/impact.ttf");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.background {
+  background-image: url("/background/background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.main-title {
+  position: absolute;
+  top: 20%;
+  font-family: Dauphin, serif;
+  font-size: 24px;
+  left: 20px;
+}
+
+.menu {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  font-family: Impact, serif;
+  font-size: 64px;
+}
+
+.menu-title:hover{
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.active {
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.menu.fixed {
+  position: fixed;
+  top: 50px;
+  bottom: auto;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.block-title {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Dauphin, serif;
+  font-weight: bold;
+  margin: 100px 12px 12px 12px;
+  padding: 24px;
+}
+
+.block-text {
+  font-family: Dauphin, serif;
+  font-size: 14px;
+  width: 50%;
+  text-align: justify;
+  margin: auto;
+  padding: 48px;
+}
+
+.block-line{
+  padding: 18px 0;
+}
+
