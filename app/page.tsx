@@ -8,6 +8,7 @@ export default function Home() {
     const titles = useRef<string[]>([])
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         // @ts-ignore
         titles.current = Array.from(menuRef.current.children)
             .map(titleElement => titleElement.innerHTML);
@@ -55,7 +56,7 @@ export default function Home() {
             {/* @ts-ignore */}
             <div id="menu" ref={menuRef} className="menu">
                 <div className="menu-title"
-                     onClick={() => window.location.href = 'https://charlottedauphin.world/pages/humann-prize'}>STUDIO
+                     onClick={() => window.location.href = 'https://charlottedauphin.world/pages/home'}>STUDIO
                 </div>
                 <div className="menu-title"
                      onClick={() => window.location.href = 'https://www.imdb.com/title/tt30268321'}>PRODUCTIONS
@@ -111,7 +112,10 @@ export default function Home() {
 
             </div>
             <div className="section SPACES"><img src="/background/placeholder.jpg"/></div>
-            <div className="section FONDATION"><img src="/background/placeholder.jpg"/></div>
+            <div className="section FONDATION">
+                <img src="/background/bg-fondation.jpg"/>
+                <div className="section-title">ARBORETUM DES GRANDES BRUYÈRES</div>
+            </div>
         </div>
     );
 }

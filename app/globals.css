@@ -2,99 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "Dauphin";
-  src: url("/fonts/Dauphin-Regular.woff");
+    font-family: "Dauphin";
+    src: url("/fonts/Dauphin-Regular.woff");
 }
 
 @font-face {
-  font-family: "Impact";
-  src: url("/fonts/impact.ttf");
+    font-family: "Impact";
+    src: url("/fonts/impact.ttf");
 }
 
 
 html, body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .background {
-  background-image: url("/background/background.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/background/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-title {
-  position: absolute;
-  top: 20%;
-  font-family: Dauphin, serif;
-  font-size: 24px;
-  left: 20px;
+    position: absolute;
+    top: 20%;
+    font-family: Dauphin, serif;
+    font-size: 24px;
+    left: 20px;
 }
 
 .menu {
-  position: absolute;
-  bottom: 100px;
-  left: 20px;
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  font-family: Impact, serif;
-  font-size: 64px;
+    z-index: 10;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    display: flex;
+    width: 100%;
+    font-family: Impact, serif;
+    font-size: 64px;
 }
 
-.menu-title:hover{
-  cursor: pointer;
-  color: white;
-  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+.menu-title {
+    margin: 0 20px;
+}
+
+.menu-title:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .active {
-  color: white;
-  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .menu.fixed {
-  position: fixed;
-  top: 50px;
-  bottom: auto;
+    position: fixed;
+    top: 50px;
+    bottom: auto;
 }
 
 .section {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 35%;
+    padding: 0 10px;
+    background: white;
+    border: 1px solid black;
+    font-family: Impact, serif;
+    font-size: 64px;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
 .block-title {
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  font-family: Dauphin, serif;
-  font-weight: bold;
-  margin: 100px 12px 12px 12px;
-  padding: 24px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: Dauphin, serif;
+    font-weight: bold;
+    margin: 100px 12px 12px 12px;
+    padding: 24px;
 }
 
 .block-text {
-  font-family: Dauphin, serif;
-  font-size: 14px;
-  width: 50%;
-  text-align: justify;
-  margin: auto;
-  padding: 48px;
+    font-family: Dauphin, serif;
+    font-size: 14px;
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    padding: 48px;
 }
 
-.block-line{
-  padding: 18px 0;
+.block-line {
+    padding: 18px 0;
 }
 
