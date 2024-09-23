@@ -52,7 +52,9 @@ export default function Home() {
     return (
         <div>
             <div className="background"></div>
-            <div className="main-title">CHARLOTTE DAUPHIN</div>
+            <div className="main-title"
+                 onClick={() => window.location.href = 'https://charlottedauphin.world/pages/info'}>CHARLOTTE DAUPHIN
+            </div>
             {/* @ts-ignore */}
             <div id="menu" ref={menuRef} className="menu">
                 <div className="menu-title"
