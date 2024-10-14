@@ -83,6 +83,7 @@ html, body {
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
+    flex-direction: column;
 }
 
 .section-title {
@@ -127,13 +128,108 @@ img {
 }
 
 
+.center-left {
+    justify-content: left;
+}
+
 .text-introduction {
-    width: 80%;
+    width: 70%;
     margin: 32px;
     padding: 6px;
     color: gray;
     border: 1px solid lightgray;
+    justify-content: left;
 }
+
+
+.studio-images {
+    height: 170vh;
+    position: relative;
+    margin: 12px 32px 128px 32px;
+
+    .one {
+        position: absolute;
+        top: 20px;
+        width: 50%;
+        height: auto;
+    }
+
+    .two {
+        position: absolute;
+        top: -25px;
+        left: 35%;
+        width: 20%;
+        height: auto;
+    }
+
+    .three {
+        position: absolute;
+        top: -10px;
+        right: 5%;
+        width: 30%;
+        height: auto;
+    }
+
+    .four {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        width: 30%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .five {
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        width: 25%;
+        height: auto;
+    }
+
+    .six {
+        position: absolute;
+        top: 55%;
+        left: 0;
+        width: 30%;
+        height: auto;
+    }
+
+    .seven {
+        position: absolute;
+        top: 90%;
+        right: 0;
+        width: 50%;
+        height: auto;
+    }
+}
+
+.studio-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 36px;
+
+    .studio-menu-element {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+
+        .studio-menu-element-title {
+            font-size: 84px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .studio-menu-element-title:hover {
+            color: gray;
+        }
+
+        .studio-menu-element-year {
+
+        }
+    }
+}
+
 
 .grid-production {
     display: flex;
@@ -226,10 +322,95 @@ img {
     }
 }
 
-.production-image {
-    img {
+.raye {
+    text-decoration: line-through;
+}
 
+.spaces-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 128px 36px;
+    position: relative;
+
+    input {
+        display: none;
+    }
+
+    .spaces-menu-element {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+
+
+
+        .spaces-menu-element-title {
+            font-size: 84px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        .spaces-menu-element-city {
+            z-index: 3;
+        }
+
+        .spaces-menu-element-title:hover {
+            color: gray;
+        }
+
+        .spaces-menu-element-image {
+            display: none;
+            position: absolute;
+            right: 5%;
+            top: 0;
+            height: 500px;
+            z-index: 2;
+        }
+
+        .spaces-menu-element-infos {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: white;
+            z-index: 4;
+            padding: 24px;
+
+            .title{
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .lines {
+                margin: 20px 0;
+
+                .line {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: solid 1px;
+                }
+            }
+        }
+    }
+
+    label:hover + .spaces-menu-element-city + .spaces-menu-element-infos + .spaces-menu-element-image {
+        display: block;
+    }
+
+    input[type="radio"]:checked + label + .spaces-menu-element-city + .spaces-menu-element-infos {
+        display: flex;
+    }
+
+    input[type="radio"]:checked + label + .spaces-menu-element-city + .spaces-menu-element-infos + .spaces-menu-element-image {
+        display: block;
     }
 
 }
+
+
+
 
