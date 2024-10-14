@@ -31,7 +31,7 @@ export default function Home() {
             // @ts-ignore
             const activeSectionElement = document.elementFromPoint(10, menuPosition + 79);
             // @ts-ignore
-            const activeSection = activeSectionElement.classList[1] || activeSectionElement.parentElement.classList[1] || activeSectionElement.parentElement.parentElement.classList[1]
+            const activeSection = activeSectionElement.classList[1] || activeSectionElement.parentElement.classList[1] || activeSectionElement.parentElement.parentElement.classList[1] || activeSectionElement.parentElement.parentElement.parentElement.classList[1]
             const activeSectionIndex = titles.current.findIndex((e) => e === activeSection);
             const activeSectionTitle = titles.current[activeSectionIndex];
 
@@ -73,6 +73,23 @@ export default function Home() {
                 <img src="/background/bg-studio.jpg"
                      onClick={() => window.location.href = 'https://charlottedauphin.world/pages/humann-prize'}/>
             </div>
+            <div className="section STUDIO">
+                <div className="text-introduction">
+                    <div>Le studio de Charlotte Dauphin se distingue par ses créations variées et ses collaborations,
+                        formant parfois un
+                        collectif artistique à géométrie variable. Il fusionne des domaines tels que la performance, le
+                        cinéma, la mise en
+                        scène, le design, et la sculpture.
+                    </div>
+                    <div>
+                        Le concept d’OTA (Office Technique Artistique) incarne cette dynamique, agissant comme un
+                        véritable laboratoire
+                        créatif. Chaque projet met en lumière les interactions entre architecture, espace, matière,
+                        corps et mouvement,
+                        offrant des expériences visuelles uniques dans un univers en constante évolution.
+                    </div>
+                </div>
+            </div>
             <div className="section PRODUCTIONS">
                 <div className="block-title">ELEANOR THE GREAT</div>
                 <div className="block-text">
@@ -113,11 +130,255 @@ export default function Home() {
                 <img src="/background/bg-prod.png"/>
 
             </div>
-            <div className="section SPACES"><img src="/background/placeholder.jpg"/></div>
-            <div className="section FONDATION">
-                <img src="/background/bg-fondation.jpg"/>
-                <div className="section-title">ARBORETUM DES GRANDES BRUYÈRES</div>
+
+
+            <div className="section PRODUCTIONS">
+                <div className="grid-production">
+
+                    <div className="grid-element">
+                        <div className="grid-image">
+                            <img src="/assets/production/maya/maya-main.jpg"/>
+                            <a className="hover-text" href="#maya">
+                                <div>Réalisatrice et scénariste :</div>
+                                <div>Mia Hansen-Løve</div>
+                            </a>
+                        </div>
+                        <div className="grid-title-line">MAYA</div>
+                        <div className="grid-title-line">2018</div>
+                    </div>
+
+                    <div className="grid-element">
+                        <div className="grid-image">
+                            <img src="/assets/production/diamant-noir/diamant-main.jpg"/>
+                            <a className="hover-text" href="#diamant">
+                                <div>Réalisation :</div>
+                                <div>Arthur Harari</div>
+                            </a>
+                        </div>
+                        <div className="grid-title-line">DIAMANT NOIR</div>
+                        <div className="grid-title-line">2016</div>
+                    </div>
+
+                    <div className="grid-element">
+                        <div className="grid-image">
+                            <img src="/assets/production/bergman/bergman-main.jpg"/>
+                            <a className="hover-text" href="#bergman">
+                                <div>Réalisation et scénario :</div>
+                                <div>Mia Hansen-Løve</div>
+                            </a>
+                        </div>
+                        <div className="grid-title-line">BERGMAN ISLAND</div>
+                        <div className="grid-title-line">2021</div>
+                    </div>
+
+
+                </div>
+
+
+                <div id="maya" className="production-section">
+                    <div className="production-banner">
+                        <iframe width="100%" height="600"
+                                src="https://www.youtube.com/embed/aflOWd8e4C0">
+                        </iframe>
+                    </div>
+                    <div className="production-text">
+                        <div className="production-title">MAYA</div>
+                        <div className="production-content">
+                            <div className="content-text">
+                                Film français réalisé par Mia Hansen-Løve, sorti en 2018.
+                            </div>
+                            <div className="content-text">Gabriel, trentenaire, fait partie des deux journalistes enlevés en Syrie. Ils passent quatre mois en
+                            captivité et sont libérés en décembre 2012. Après une série d’interrogatoires et d’examens cliniques,
+                            il retrouve sa famille, dont son père et Noamie, son ancienne petite amie. Sa mère — avec
+                            qui il a coupé les ponts — vit en Inde, pays où il a grandi. Après quelques semaines, il part pour
+                            Goa, retrouve sa maison d’enfance, et rencontre une jeune Indienne prénommée Maya.</div>
+                        </div>
+
+                        <div className="production-lines">
+                            <div className="production-line">
+                                <div>RÉALISATION ET SCÉNARIO</div>
+                                <div>Mia Hansen-Løve</div>
+                            </div>
+                            <div className="production-line">
+                                <div>PHOTOGRAPHIE</div>
+                                <div>Hélène Louvart</div>
+                            </div>
+                            <div className="production-line">
+                                <div>MONTAGE</div>
+                                <div>Marion Monnier</div>
+                            </div>
+                            <div className="production-line">
+                                <div>DÉCORS</div>
+                                <div>Mila Préli</div>
+                            </div>
+                            <div className="production-line">
+                                <div>COSTUMES</div>
+                                <div>Judith de Luze</div>
+                            </div>
+                        </div>
+
+                        <div className="production-main-image">
+                            <img src="/assets/production/maya/AFFICHE.jpg"/>
+                        </div>
+
+
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/maya/IMAGE%201.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/maya/IMAGE%202.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/maya/IMAGE%203.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/maya/IMAGE%204.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/maya/IMAGE%205.jpg"/>
+                    </div>
+                </div>
+
+                <div id="diamant" className="production-section">
+
+                    <div className="production-banner">
+                        <iframe width="100%" height="500"
+                                src="https://www.youtube.com/embed/tH9GZmnE0OA">
+                        </iframe>
+                    </div>
+                    <div className="production-text">
+                        <div className="production-title">DIAMANT NOIR</div>
+                        <div className="production-content">
+                            <div className="content-text">Film dramatique franco-belge réalisé par Arthur Harari, sorti en 2016.</div>
+                            <div className="content-text"> Pier Ulmann vit de petits boulots et de cambriolages qu’il commet avec Kevin pour le compte
+                                de
+                                Rachid. Un jour, il apprend la mort de son père dont il n’avait plus de nouvelles depuis
+                                plusieurs
+                                années. Pier décide de se venger du mauvais traitement de son père par son grand-père et son
+                                oncle. Il renoue alors avec sa famille paternelle qui travaille dans le milieu des
+                                diamantaires à
+                                Anvers.</div>
+
+                        </div>
+
+                        <div className="production-lines">
+                            <div className="production-line">
+                                <div>RÉALISATION ET SCÉNARIO</div>
+                                <div>Arthur Harari</div>
+                            </div>
+                            <div className="production-line">
+                                <div>PHOTOGRAPHIE</div>
+                                <div>Tom Harari</div>
+                            </div>
+                            <div className="production-line">
+                                <div>MONTAGE</div>
+                                <div>Laurent Sénéchal</div>
+                            </div>
+                            <div className="production-line">
+                                <div>DÉCORS</div>
+                                <div>Véronique Sacrez</div>
+                            </div>
+                            <div className="production-line">
+                                <div>COSTUMES</div>
+                                <div>Sophie Lifshitz</div>
+                            </div>
+                        </div>
+
+                        <div className="production-main-image">
+                            <img src="/assets/production/diamant-noir/AFFICHE.jpg"/>
+                        </div>
+
+
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/diamant-noir/IMAGE%201.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/diamant-noir/IMAGE%202.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/diamant-noir/IMAGE%203.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/diamant-noir/IMAGE%204.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/diamant-noir/IMAGE%205.jpg"/>
+                    </div>
+                </div>
+
+                <div id="bergman" className="production-section">
+
+                    <div className="production-banner">
+                        <iframe width="100%" height="500"
+                                src="https://www.youtube.com/embed/nrlVHVid-20">
+                        </iframe>
+                    </div>
+                    <div className="production-text">
+                        <div className="production-title">BERGMAN ISLAND</div>
+                        <div className="production-content">
+                            <div className="content-text">
+                                Film suédo-germano-belgo-français réalisé par Mia Hansen-Løve sorti en 2021.
+                            </div>
+                            <div className="content-text">
+                                Deux cinéastes s’installent le temps d’un été sur l’île suédoise de
+                                Fårö pour écrire. Entre balades, projections et discussions sur
+                                Bergman qui y vécut, le couple découvre l’île et ses paysages
+                                sauvages. Dans ce décor réalité et scénario s’entremêlent dans
+                                une douce atmosphère.
+                            </div>
+
+                        </div>
+
+                        <div className="production-lines">
+                            <div className="production-line">
+                                <div>RÉALISATION ET SCÉNARIO</div>
+                                <div>Mia Hansen-Løve</div>
+                            </div>
+                            <div className="production-line">
+                                <div>PHOTOGRAPHIE</div>
+                                <div>Denis Lenoir</div>
+                            </div>
+                            <div className="production-line">
+                                <div>MONTAGE</div>
+                                <div>Marion Monnier</div>
+                            </div>
+                            <div className="production-line">
+                                <div>DÉCORS</div>
+                                <div>Béatrice Strand</div>
+                            </div>
+                            <div className="production-line">
+                                <div>COSTUMES</div>
+                                <div>Judith de Luze</div>
+                            </div>
+                        </div>
+
+                        <div className="production-main-image">
+                            <img src="/assets/production/bergman/affiche.webp"/>
+                        </div>
+
+
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/bergman/IMAGE%201.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/bergman/IMAGE%202.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/bergman/IMAGE%203.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/bergman/IMAGE%204.jpg"/>
+                    </div>
+                    <div className="production-image">
+                        <img src="/assets/production/bergman/IMAGE%205.jpg"/>
+                    </div>
+
+                </div>
             </div>
+            <div className="section SPACES"><img src="/background/placeholder.jpg"/></div>
         </div>
     );
 }
