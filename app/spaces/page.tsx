@@ -35,7 +35,6 @@ export default function Spaces() {
                     <div className="spaces-menu-element">
                         <a className="spaces-menu-element-title" href="/spaces/theoule">THEOULE</a>
                         <div className="spaces-menu-element-city">Theoule-sur-mer</div>
-
                         <div className="spaces-menu-element-image">
                             <img src="/assets/spaces/theoule.png"/>
                         </div>

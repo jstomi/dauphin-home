@@ -403,12 +403,7 @@ img {
 
     }
 
-
-    div:hover + .spaces-menu-element-city + .spaces-menu-element-image {
-        display: block;
-    }
-
-    input[type="radio"]:checked + label + .spaces-menu-element-city + .spaces-menu-element-image {
+    a:hover + .spaces-menu-element-city + .spaces-menu-element-image {
         display: block;
     }
 
