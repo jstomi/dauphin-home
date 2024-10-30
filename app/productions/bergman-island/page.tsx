@@ -67,8 +67,11 @@ export default function BergmanIsland() {
                             </div>
 
                             <div onClick={() => {
+                                //@ts-ignore
                                 document.getElementById("moreInfos").style.display = "flex";
+                                //@ts-ignore
                                 document.getElementById("moreInfosToggle").style.display = "none";
+                                //@ts-ignore
                                 document.getElementsByClassName("production-lines")[0].style.display = "none";
                             }} id="moreInfosToggle" className="more-infos">
                                 <div>More infos <div className="more-infos-square"></div></div>
