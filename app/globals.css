@@ -323,7 +323,7 @@ img {
 }
 
 .production-text {
-    width: 33%;
+    width: 60%;
     margin: 0 auto;
 
     .content-text {
@@ -434,11 +434,11 @@ img {
     justify-content: space-between;
     margin: 64px 0;
 
-    .spaces-menu-element-infos{
+    .spaces-menu-element-infos {
         width: 50%;
     }
 
-    .spaces-menu-element-image-right{
+    .spaces-menu-element-image-right {
         width: 50%;
     }
 
@@ -457,6 +457,42 @@ img {
     width: 300px;
     font-size: 24px;
     text-align: center;
+}
+
+.more-infos {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.more-infos-square {
+    display: inline-block;
+    vertical-align: middle;
+    width: 7px;
+    height: 13px;
+    background: black;
+    margin: 0 5px;
+}
+
+#moreInfos {
+    display: none;
+}
+
+.more-infos-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-infos-content-line {
+    display: flex;
+}
+
+.more-infos-content-line > div:first-child {
+    width: 35%;
+}
+
+.more-infos-content-line > div {
+    white-space: pre;
 }
 
 
