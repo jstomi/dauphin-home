@@ -70,9 +70,9 @@ export default function Maya() {
                             <img src="/assets/production/maya/AFFICHE.jpg"/>
                         </div>
                         <div className="center">
-                            <div className="back-button">
-                                <a href="/productions">Retour</a>
-                            </div>
+                            <a href="/productions" className="back-button">
+                                <div>Retour</div>
+                            </a>
                         </div>
 
                     </div>
@@ -92,9 +92,9 @@ export default function Maya() {
                         <img src="/assets/production/maya/IMAGE%205.jpg"/>
                     </div>
                     <div className="center">
-                        <div className="back-button">
-                            <a href="/productions">Retour</a>
-                        </div>
+                        <a href="/productions" className="back-button">
+                            <div>Retour</div>
+                        </a>
                     </div>
                 </div>
             </div>

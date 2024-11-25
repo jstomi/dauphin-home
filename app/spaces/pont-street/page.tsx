@@ -56,9 +56,9 @@ export default function PontStreet() {
                 </div>
             </div>
             <div className="center">
-                <div className="back-button">
-                    <a href="/spaces">Retour</a>
-                </div>
+                <a href="/spaces" className="back-button">
+                    <div>Retour</div>
+                </a>
             </div>
         </div>
     );

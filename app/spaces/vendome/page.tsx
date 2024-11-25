@@ -52,13 +52,22 @@ export default function Vendome() {
                 </div>
 
                 <div className="spaces-menu-element-image-right">
-                    <img src="/assets/spaces/vendome.png"/>
                 </div>
-            </div>
-            <div className="center">
-                <div className="back-button">
-                    <a href="/spaces">Retour</a>
+                <div className="slider-container">
+                    <input type="radio" id="slide1" name="slider" defaultChecked/>
+                    <label htmlFor="slide1" className="slider-button"></label>
+                    <input type="radio" id="slide2" name="slider"/>
+                    <label htmlFor="slide2" className="slider-button"></label>
+                    <input type="radio" id="slide3" name="slider"/>
+                    <label htmlFor="slide3" className="slider-button"></label>
+                    <div className="slider-images">
+                        <img src="/assets/spaces/vendome.png" id="image1" className="slide"/>
+                        <img src="/assets/spaces/vendome2.png" id="image2" className="slide"/>
+                        <img src="/assets/spaces/vendome.png" id="image3" className="slide"/>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     );

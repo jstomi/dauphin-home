@@ -23,9 +23,9 @@ export default function BergmanIsland() {
                     <div id="bergman" className="production-section">
 
                         <div className="production-banner">
-                            <iframe width="100%" height="500"
-                                    src="https://www.youtube.com/embed/nrlVHVid-20">
-                            </iframe>
+                            <img onClick={() => window.open('https://www.youtube.com/watch?v=nrlVHVid-20', "_blank")}
+                                 src="/assets/production/bergman/bergman-yt.png" alt="bergman island youtube preview"/>
+                            <img className="production-banner-play-button" src="/assets/play.png"/>
                         </div>
                         <div className="production-text">
                             <div className="production-title">BERGMAN ISLAND</div>
@@ -64,80 +64,55 @@ export default function BergmanIsland() {
                                     <div>COSTUMES</div>
                                     <div>Judith de Luze</div>
                                 </div>
+
+                                <div id="moreInfos">
+                                    <div className="production-line">
+                                        <div>Musique</div>
+                                        <div>Raphaël Hamburger</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Son</div>
+                                        <div>Paul Heymans</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Production</div>
+                                        <div>Marc Brégain, Julie Viez</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Sociétés de production</div>
+                                        <div>CG Cinéma, Arte France Cinéma et Barnstormer Productions</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Société de distribution</div>
+                                        <div>Les Films du losange</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Pays de production</div>
+                                        <div>France - Belgique - Allemagne - Suède</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Langue originale</div>
+                                        <div>Anglais</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Durée</div>
+                                        <div>112 minutes</div>
+                                    </div>
+                                    <div className="production-line">
+                                        <div>Dates de sortie</div>
+                                        <div>juillet 2021 (Festival de Cannes 2021)</div>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div onClick={() => {
                                 //@ts-ignore
-                                document.getElementById("moreInfos").style.display = "flex";
+                                document.getElementById("moreInfos").style.display = "block";
                                 //@ts-ignore
                                 document.getElementById("moreInfosToggle").style.display = "none";
-                                //@ts-ignore
-                                document.getElementsByClassName("production-lines")[0].style.display = "none";
                             }} id="moreInfosToggle" className="more-infos">
                                 <div>More infos <div className="more-infos-square"></div></div>
-                            </div>
-                            <div id="moreInfos" className="more-infos-content">
-                                <div className="more-infos-content-line">
-                                    <div>Titre</div>
-                                    <div>Bergman Island</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Réalisation et scénario</div>
-                                    <div>Mia Hansen-Løve</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Photographie</div>
-                                    <div>Denis Lenoir</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Montage</div>
-                                    <div>Marion Monnier</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Décors</div>
-                                    <div>Béatrice Strand</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Costumes</div>
-                                    <div>Judith de Luze</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Musique</div>
-                                    <div>Raphaël Hamburger</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Son</div>
-                                    <div>Paul Heymans</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Production</div>
-                                    <div>Marc Brégain, Julie Viez</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Sociétés de production</div>
-                                    <div>CG Cinéma, Arte France Cinéma et Barnstormer Productions</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Société de distribution</div>
-                                    <div>Les Films du losange</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Pays de production</div>
-                                    <div>France - Belgique - Allemagne - Suède</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Langue originale</div>
-                                    <div>Anglais</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Durée</div>
-                                    <div>112 minutes</div>
-                                </div>
-                                <div className="more-infos-content-line">
-                                    <div>Dates de sortie</div>
-                                    <div>juillet 2021 (Festival de Cannes 2021)</div>
-                                </div>
-
                             </div>
 
                             <div className="production-main-image">
@@ -145,11 +120,10 @@ export default function BergmanIsland() {
                             </div>
 
                             <div className="center">
-                                <div className="back-button">
-                                    <a href="/productions">Retour</a>
-                                </div>
+                                <a href="/productions" className="back-button">
+                                    <div>Retour</div>
+                                </a>
                             </div>
-
 
                         </div>
                         <div className="production-image">
@@ -169,9 +143,9 @@ export default function BergmanIsland() {
                         </div>
 
                         <div className="center">
-                            <div className="back-button">
-                                <a href="/productions">Retour</a>
-                            </div>
+                            <a href="/productions" className="back-button">
+                                <div>Retour</div>
+                            </a>
                         </div>
                     </div>
                 </div>

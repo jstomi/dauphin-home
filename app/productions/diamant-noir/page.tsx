@@ -74,9 +74,9 @@ export default function DiamantNoir() {
                         </div>
 
                         <div className="center">
-                            <div className="back-button">
-                                <a href="/productions">Retour</a>
-                            </div>
+                            <a href="/productions" className="back-button">
+                                <div>Retour</div>
+                            </a>
                         </div>
 
                     </div>
@@ -97,9 +97,9 @@ export default function DiamantNoir() {
                     </div>
 
                     <div className="center">
-                        <div className="back-button">
-                            <a href="/productions">Retour</a>
-                        </div>
+                        <a href="/productions" className="back-button">
+                            <div>Retour</div>
+                        </a>
                     </div>
                 </div>
             </div>

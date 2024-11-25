@@ -144,82 +144,153 @@ img {
     padding: 18px 0;
 }
 
+.studio-images-container {
+    margin: 0 auto;
+    max-width: 1024px;
 
-.center-left {
-    justify-content: left;
+    .studio-images {
+        height: 3450px;
+        margin: 0 32px;
+        position: relative;
+
+
+        .content-with-text {
+            position: absolute;
+            top: 0;
+            width: 60%;
+        }
+
+        .text-introduction {
+            position: relative;
+            padding: 6px;
+            color: black;
+            border: 1px solid black;
+            text-align: justify;
+            font-size: 15px;
+        }
+
+        .one {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+            height: auto;
+        }
+
+        .two {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20%;
+            height: auto;
+        }
+
+        .three {
+            position: absolute;
+            top: 600px;
+            right: 0;
+            width: 20%;
+            height: auto;
+        }
+
+        .four {
+            position: absolute;
+            top: 760px;
+            left: 0;
+            width: 60%;
+            height: auto;
+            z-index: 1;
+        }
+
+        .five {
+            z-index: 2;
+            position: absolute;
+            top: 1000px;
+            left: 50%;
+            width: 35%;
+            height: auto;
+        }
+
+        .six {
+            z-index: 2;
+            position: absolute;
+            top: 1320px;
+            left: 13%;
+            width: 35%;
+            height: auto;
+        }
+
+        .seven {
+            position: absolute;
+            top: 1400px;
+            right: 0;
+            width: 60%;
+            height: auto;
+        }
+
+        .eight {
+            z-index: 2;
+            position: absolute;
+            top: 1720px;
+            left: 0;
+            width: 20%;
+            height: auto;
+        }
+
+        .nine {
+            position: absolute;
+            top: 1840px;
+            left: 10%;
+            width: 78%;
+            height: auto;
+        }
+
+        .ten {
+            position: absolute;
+            top: 2350px;
+            right: 0;
+            width: 35%;
+            height: auto;
+        }
+
+        .eleven-twelve {
+            position: absolute;
+            top: 2510px;
+            left: 15%;
+            display: flex;
+            gap: 20px;
+
+            .eleven {
+                position: relative;
+                width: 42.5%;
+                align-self: end;
+            }
+
+            .twelve {
+                position: relative;
+                width: 42.5%;
+                align-self: end;
+            }
+        }
+
+
+        .thirteen {
+            position: absolute;
+            top: 3120px;
+            left: 0;
+            width: 37%;
+            height: auto;
+        }
+
+        .fourteen {
+            position: absolute;
+            top: 3120px;
+            right: 0;
+            width: 46%;
+            height: auto;
+        }
+    }
 }
 
-.text-introduction {
-    width: 70%;
-    margin: 32px;
-    padding: 6px;
-    color: gray;
-    border: 1px solid lightgray;
-    justify-content: left;
-}
-
-
-.studio-images {
-    height: 170vh;
-    position: relative;
-    margin: 12px 32px 128px 32px;
-
-    .one {
-        position: absolute;
-        top: 20px;
-        width: 50%;
-        height: auto;
-    }
-
-    .two {
-        position: absolute;
-        top: -25px;
-        left: 35%;
-        width: 20%;
-        height: auto;
-    }
-
-    .three {
-        position: absolute;
-        top: -10px;
-        right: 5%;
-        width: 30%;
-        height: auto;
-    }
-
-    .four {
-        position: absolute;
-        top: 40%;
-        right: 5%;
-        width: 30%;
-        height: auto;
-        z-index: 1;
-    }
-
-    .five {
-        position: absolute;
-        top: 50%;
-        right: 25%;
-        width: 25%;
-        height: auto;
-    }
-
-    .six {
-        position: absolute;
-        top: 55%;
-        left: 0;
-        width: 30%;
-        height: auto;
-    }
-
-    .seven {
-        position: absolute;
-        top: 90%;
-        right: 0;
-        width: 50%;
-        height: auto;
-    }
-}
 
 .studio-menu {
     display: flex;
@@ -251,9 +322,26 @@ img {
             display: none;
             position: absolute;
             right: 2%;
-            top: 20%;
+            top: 5%;
             height: 500px;
             z-index: 1;
+
+            &.top-15 {
+                top: 15%;
+            }
+
+            &.top-30 {
+                top: 30%;
+            }
+
+            &.top-45 {
+                top: 45%;
+            }
+
+            &.top-60 {
+                top: 60%;
+            }
+
         }
 
 
@@ -319,7 +407,17 @@ img {
 
 .production-banner {
     position: relative;
-    z-index: 100;
+    margin-top: -200px;
+    cursor: pointer;
+
+    .production-banner-play-button {
+        pointer-events: none;
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .production-text {
@@ -347,12 +445,60 @@ img {
             display: flex;
             justify-content: space-between;
             border-bottom: solid 1px;
+
+            :first-child {
+                text-transform: uppercase;
+            }
+
         }
     }
 
     .production-main-image {
         margin: 40px auto;
         width: 70%;
+    }
+}
+
+
+.studio-text {
+    width: 45%;
+    margin: 0 auto;
+
+    .content-text {
+        margin: 10px 0;
+    }
+
+    .studio-title {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 30px 0;
+    }
+
+    .studio-content {
+        margin: 0 0 40px 0;
+        text-align: justify;
+    }
+
+    .studio-lines {
+        display: flex;
+        flex-direction: column;
+
+        .studio-line {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.studio-details-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    gap: 20px;
+
+    img {
+        width: calc(50% - 10px);
     }
 }
 
@@ -432,14 +578,15 @@ img {
 .spaces-mid-section {
     display: flex;
     justify-content: space-between;
-    margin: 64px 0;
+    flex-direction: column;
+    margin: 64px 256px;
 
     .spaces-menu-element-infos {
-        width: 50%;
+        width: 80%;
     }
 
     .spaces-menu-element-image-right {
-        width: 50%;
+        height: 450px;
     }
 
 }
@@ -478,22 +625,54 @@ img {
     display: none;
 }
 
-.more-infos-content {
+.slider-container {
     display: flex;
-    flex-direction: column;
+    margin: 8px 0;
+    gap: 10px;
+    position: relative;
+
+    input {
+        display: none;
+    }
+
+    .slider-button {
+        width: 13px;
+        height: 10px;
+        border: solid 1px black;
+        background: black;
+        cursor: pointer;
+
+        &.active {
+            background: white;
+        }
+    }
+
+    input[type="radio"]:checked + label {
+        background-color: white;
+    }
 }
 
-.more-infos-content-line {
-    display: flex;
+
+.slider-images{
+    .slide {
+        display: none;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
-.more-infos-content-line > div:first-child {
-    width: 35%;
+input[type="radio"]#slide1:checked ~ .slider-images #image1,
+input[type="radio"]#slide2:checked ~ .slider-images #image2,
+input[type="radio"]#slide3:checked ~ .slider-images #image3 {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 18px;
 }
 
-.more-infos-content-line > div {
-    white-space: pre;
-}
+
 
 
 
