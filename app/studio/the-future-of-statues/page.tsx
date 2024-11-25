@@ -23,7 +23,7 @@ export default function BergmanIsland() {
                     <div className="production-section">
 
                         <div className="production-banner">
-                            <img onClick={() => window.open('https://www.youtube.com/watch?v=nrlVHVid-20', "_blank")}
+                            <img onClick={() => window.open('https://www.youtube.com', "_blank")}
                                  src="/assets/studio/the-future-of-statues/the-future-of-statues-yt.png"
                                  alt="the future of statues youtube preview"/>
                             <img className="production-banner-play-button" src="/assets/play.png"/>
