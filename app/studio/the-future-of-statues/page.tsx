@@ -32,13 +32,7 @@ export default function BergmanIsland() {
                             <div className="studio-title">THE FUTURE OF STATUES (2024)</div>
                             <div className="studio-content">
                                 <div className="content-text">
-                                    Absence is presence is absence. The imprint of the human body is reflected by the
-                                    epic light
-                                    and sculptural artifacts (jewellery) installation. Where the body's absence becomes
-                                    palpable.
-                                    The installation explores an archeology of the future, where the viewer experiences
-                                    his own
-                                    shadow.
+                                    {"Absence is presence is absence. The imprint of the human body is reflected by the epic light and sculptural artifacts (jewellery) installation. Where the body's absence becomes palpable.The installation explores an archeology of the future, where the viewer experiences his ownshadow."}
                                 </div>
                                 <div className="content-text">
                                     The silhouettes of onlookers and passersby are reflected in a linear array of
