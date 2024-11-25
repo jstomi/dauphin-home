@@ -493,7 +493,7 @@ img {
 .studio-details-images {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     gap: 20px;
 
