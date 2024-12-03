@@ -107,7 +107,7 @@ export default function Barre() {
                                 </div>
 
                                 <div className="production-main-image">
-                                    <img src="/assets/production/architecte/AFFICHE.jpg"/>
+                                    <img src="/assets/production/barre/AFFICHE.jpg"/>
                                 </div>
 
                                 <div className="center">
@@ -129,19 +129,19 @@ export default function Barre() {
 
 
                         <div className="production-image">
-                            <img src="/assets/production/architecte/IMAGE%201.jpg"/>
+                            <img src="/assets/production/barre/IMAGE%201.jpg"/>
                         </div>
                         <div className="production-image">
-                            <img src="/assets/production/architecte/IMAGE%202.jpg"/>
+                            <img src="/assets/production/barre/IMAGE%202.jpg"/>
                         </div>
                         <div className="production-image">
-                            <img src="/assets/production/architecte/IMAGE%203.jpg"/>
+                            <img src="/assets/production/barre/IMAGE%203.jpg"/>
                         </div>
                         <div className="production-image">
-                            <img src="/assets/production/architecte/IMAGE%204.jpg"/>
+                            <img src="/assets/production/barre/IMAGE%204.jpg"/>
                         </div>
                         <div className="production-image">
-                            <img src="/assets/production/architecte/IMAGE%205.jpg"/>
+                            <img src="/assets/production/barre/IMAGE%205.jpg"/>
                         </div>
 
                         <div className="center">
