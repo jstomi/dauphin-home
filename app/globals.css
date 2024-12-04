@@ -365,7 +365,7 @@ img {
     margin: 40px 0;
 }
 
-.invisible{
+.invisible {
     pointer-events: none;
 }
 
@@ -413,6 +413,11 @@ img {
     position: relative;
     margin-top: -200px;
     cursor: pointer;
+    height: 85vh;
+
+    img {
+        object-fit: cover;
+    }
 
     .production-banner-play-button {
         pointer-events: none;

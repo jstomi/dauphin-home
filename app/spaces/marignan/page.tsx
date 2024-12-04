@@ -55,11 +55,6 @@ export default function Marignan() {
                     <img src="/assets/spaces/vendome.png"/>
                 </div>
             </div>
-            <div className="center">
-                <a href="/spaces" className="back-button">
-                    <div >Retour</div>
-                </a>
-            </div>
         </div>
     );
 }

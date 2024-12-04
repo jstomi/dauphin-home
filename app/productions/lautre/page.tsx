@@ -108,6 +108,14 @@ export default function Lautre() {
                                             <div>Date de sortie</div>
                                             <div>8 janvier 2020</div>
                                         </div>
+                                        <div onClick={() => {
+                                            //@ts-ignore
+                                            document.getElementById("moreInfos").style.display = "none";
+                                            //@ts-ignore
+                                            document.getElementById("moreInfosToggle").style.display = "flex";
+                                        }} id="lessInfosToggle" className="more-infos">
+                                            <div>Less infos <div className="more-infos-square"></div></div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -123,12 +131,6 @@ export default function Lautre() {
 
                                 <div className="production-main-image">
                                     <img src="/assets/production/lautre/AFFICHE.jpg"/>
-                                </div>
-
-                                <div className="center">
-                                    <a href="/productions" className="back-button">
-                                        <div>Retour</div>
-                                    </a>
                                 </div>
 
                             </div>
@@ -157,12 +159,6 @@ export default function Lautre() {
                         </div>
                         <div className="production-image">
                             <img src="/assets/production/lautre/IMAGE%205.jpg"/>
-                        </div>
-
-                        <div className="center">
-                            <a href="/productions" className="back-button">
-                                <div>Retour</div>
-                            </a>
                         </div>
                     </div>
                 </div>

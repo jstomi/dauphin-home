@@ -88,7 +88,8 @@ export default function DiamantNoir() {
                                         </div>
                                         <div className="production-line">
                                             <div>Coproduction</div>
-                                            <div>Savage Film, Frakas Productions, France 2 Cinéma, Jouror Productions, Proximus
+                                            <div>Savage Film, Frakas Productions, France 2 Cinéma, Jouror Productions,
+                                                Proximus
                                             </div>
                                         </div>
                                         <div className="production-line">
@@ -111,6 +112,14 @@ export default function DiamantNoir() {
                                             <div>Dates de sortie</div>
                                             <div>juin 2016</div>
                                         </div>
+                                        <div onClick={() => {
+                                            //@ts-ignore
+                                            document.getElementById("moreInfos").style.display = "none";
+                                            //@ts-ignore
+                                            document.getElementById("moreInfosToggle").style.display = "flex";
+                                        }} id="lessInfosToggle" className="more-infos">
+                                            <div>Less infos <div className="more-infos-square"></div></div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -126,12 +135,6 @@ export default function DiamantNoir() {
 
                                 <div className="production-main-image">
                                     <img src="/assets/production/diamant-noir/AFFICHE.jpg"/>
-                                </div>
-
-                                <div className="center">
-                                    <a href="/productions" className="back-button">
-                                        <div>Retour</div>
-                                    </a>
                                 </div>
 
                             </div>
@@ -160,12 +163,6 @@ export default function DiamantNoir() {
                         </div>
                         <div className="production-image">
                             <img src="/assets/production/diamant-noir/IMAGE%205.jpg"/>
-                        </div>
-
-                        <div className="center">
-                            <a href="/productions" className="back-button">
-                                <div>Retour</div>
-                            </a>
                         </div>
                     </div>
                 </div>

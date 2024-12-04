@@ -103,6 +103,14 @@ export default function BergmanIsland() {
                                             <div>Dates de sortie</div>
                                             <div>juillet 2021 (Festival de Cannes 2021)</div>
                                         </div>
+                                        <div onClick={() => {
+                                            //@ts-ignore
+                                            document.getElementById("moreInfos").style.display = "none";
+                                            //@ts-ignore
+                                            document.getElementById("moreInfosToggle").style.display = "flex";
+                                        }} id="lessInfosToggle" className="more-infos">
+                                            <div>Less infos <div className="more-infos-square"></div></div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -119,13 +127,6 @@ export default function BergmanIsland() {
                                 <div className="production-main-image">
                                     <img src="/assets/production/bergman/affiche.webp"/>
                                 </div>
-
-                                <div className="center">
-                                    <a href="/productions" className="back-button">
-                                        <div>Retour</div>
-                                    </a>
-                                </div>
-
                             </div>
                             <div className="watch-now">
                                 <div className="title">
@@ -152,12 +153,6 @@ export default function BergmanIsland() {
                         </div>
                         <div className="production-image">
                             <img src="/assets/production/bergman/IMAGE%205.jpg"/>
-                        </div>
-
-                        <div className="center">
-                            <a href="/productions" className="back-button">
-                                <div>Retour</div>
-                            </a>
                         </div>
                     </div>
                 </div>
